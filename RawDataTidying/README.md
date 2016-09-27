@@ -14,3 +14,4 @@ List of datatypes:
 - mngt_data
 - other_data
 
+Time is converted and reported as UTC.
