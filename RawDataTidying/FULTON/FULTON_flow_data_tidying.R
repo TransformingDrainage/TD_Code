@@ -31,9 +31,9 @@ ful$Location <- as.factor(ful$Location)
 
 # combine date and time
 ful$timestamp <- parse_date_time(paste(ful$Sampler_date, format(as.POSIXct(ful$Sampler_time), "%H:%M")), 
-                                    "Ymd_hms", truncated = 1)
+                                    "Ymd_HMS", truncated = 1)
 ful$timestamp[is.na(ful$timestamp)] <- parse_date_time(paste(ful$Sampler_date[is.na(ful$timestamp)], "00:00:00"), 
-                                                             "Ymd_hms", truncated = 1)
+                                                             "Ymd_HMS", truncated = 1)
 #correct UTC time for Ohio
 ful$timestamp <- ful$timestamp + hours(5) 
 
