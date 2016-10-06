@@ -72,8 +72,13 @@ board_mngt$Adjustment <- c("START", "FINISH")
 
 # SAVING -------------------------------------------------------------------------------------
 a <- getwd()
-setwd("C:/Users/gio/Documents/TD/Data/TIDY")
+# save data in Google Drive
+setwd("C:/Users/gio/Google Drive/TIDY")
+write.table(board_mngt, file = "VANWERT_Board_Management_2001-2009.txt", sep = "\t", 
+            row.names = FALSE, quote = FALSE)
 
+# save data in local drive
+setwd("C:/Users/gio/Documents/TD/Data/TIDY")
 write.table(board_mngt, file = "VANWERT_Board_Management_2001-2009.txt", sep = "\t", 
             row.names = FALSE, quote = FALSE)
 

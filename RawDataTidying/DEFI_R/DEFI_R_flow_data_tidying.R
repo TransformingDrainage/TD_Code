@@ -128,7 +128,14 @@ names(DEFI_R) <- c("site_ID", "year", "location", "timestamp",
                    "flow_meas_type", "flow", "stage", "adj_stage", "comments")
 
 
+# save data in Google Drive
+setwd("C:/Users/gio/Google Drive/TIDY")
+write.csv(DEFI_R, file = "TIDY_DEFI_R_flow_data_1999-2008.csv", row.names = FALSE)
+save(DEFI_R, file = "TIDY_DEFI_R_flow_data_1999-2008.Rda")
+
 # save data in local drive
 setwd("C:/Users/gio/Documents/TD/Data/TIDY")
 write.csv(DEFI_R, file = "TIDY_DEFI_R_flow_data_1999-2008.csv", row.names = FALSE)
 save(DEFI_R, file = "TIDY_DEFI_R_flow_data_1999-2008.Rda")
+
+

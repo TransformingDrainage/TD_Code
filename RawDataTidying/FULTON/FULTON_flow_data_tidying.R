@@ -100,6 +100,11 @@ names(FULTON) <- c("site_ID", "year", "location", "timestamp",
                    "flow_meas_type", "flow", "stage", "adj_stage", "comments")
 
 
+# save data in Google Drive
+setwd("C:/Users/gio/Google Drive/TIDY")
+write.csv(FULTON, file = "TIDY_FULTON_flow_data_2000-2011.csv", row.names = FALSE)
+save(FULTON, file = "TIDY_FULTON_flow_data_2000-2011.Rda")
+
 # save data in local drive
 setwd("C:/Users/gio/Documents/TD/Data/TIDY")
 write.csv(FULTON, file = "TIDY_FULTON_flow_data_2000-2011.csv", row.names = FALSE)

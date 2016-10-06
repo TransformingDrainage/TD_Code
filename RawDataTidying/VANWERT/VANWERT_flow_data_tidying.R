@@ -182,6 +182,11 @@ VANWERT$flow_meas_type[is.na(VANWERT$flow)] <- NA
 # make Site ID a factor
 VANWERT$site_ID <- as.factor(VANWERT$site_ID)
 
+# save data in Google Drive
+setwd("C:/Users/gio/Google Drive/TIDY")
+write.csv(VANWERT, file = "TIDY_VANWERT_flow_data_2001-2009.csv", row.names = FALSE)
+save(VANWERT, file = "TIDY_VANWERT_flow_data_2001-2009.Rda")
+
 # save data in local drive
 setwd("C:/Users/gio/Documents/TD/Data/TIDY")
 write.csv(VANWERT, file = "TIDY_VANWERT_flow_data_2001-2009.csv", row.names = FALSE)
