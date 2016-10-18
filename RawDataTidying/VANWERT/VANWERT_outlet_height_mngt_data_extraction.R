@@ -84,3 +84,4 @@ write.table(board_mngt, file = "VANWERT_Board_Management_2001-2009.txt", sep = "
 
 setwd(a)
 rm(a, board_mngt, van, van2)
+

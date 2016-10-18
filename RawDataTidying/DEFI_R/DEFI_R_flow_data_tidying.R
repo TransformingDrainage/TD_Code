@@ -138,4 +138,3 @@ setwd("C:/Users/gio/Documents/TD/Data/TIDY")
 write.csv(DEFI_R, file = "TIDY_DEFI_R_flow_data_1999-2008.csv", row.names = FALSE)
 save(DEFI_R, file = "TIDY_DEFI_R_flow_data_1999-2008.Rda")
 
-

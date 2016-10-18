@@ -109,3 +109,4 @@ save(FULTON, file = "TIDY_FULTON_flow_data_2000-2011.Rda")
 setwd("C:/Users/gio/Documents/TD/Data/TIDY")
 write.csv(FULTON, file = "TIDY_FULTON_flow_data_2000-2011.csv", row.names = FALSE)
 save(FULTON, file = "TIDY_FULTON_flow_data_2000-2011.Rda")
+
